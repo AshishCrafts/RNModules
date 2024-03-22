@@ -1,38 +1,23 @@
 import * as React from 'react';
+import {SignUpScreen, loginScreen} from '../screen/index';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {
-  dddddddddddddd,
-  ddddddddddddd,
-  dddddddddddd,
-  ddddddddddddd,
-} from '../screen';
 
-const Stack = createNativeStackNavigator();
+export default function MyStack() {
+  const Stack = createNativeStackNavigator();
 
-const MyStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen
-        name="ddddddddddddddd"
-        component={dddddddddddddd}
+        name="SignUpScreen"
+        component={SignUpScreen}
         options={{headerShown: false}}
       />
+
       <Stack.Screen
-        name="ddddddddddddddd"
-        component={dddddddddddd}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="ddddddddddddddddd"
-        component={ddddddddddddddddd}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="ddddddddddddd"
-        component={ddddddddddddddddd}
+        name="loginScreen"
+        component={loginScreen}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
-};
-export default MyStack;
+}

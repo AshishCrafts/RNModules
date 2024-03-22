@@ -1,14 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
+import RootNavigation from './App/routes/RootNavigation';
+// import {Provider} from 'react-redux';
+// import {store} from './App/redux/store/Store';
 
-const App = () => {
+function App() {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    // <Provider store={store}>
+    <>
+      <RootNavigation />
+    </>
+
+    // </Provider>
   );
-};
-
+}
 export default App;
-
-const styles = StyleSheet.create({});
