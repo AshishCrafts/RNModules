@@ -13,7 +13,7 @@ const RootNavigation = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <NavigationContainer>
-        {isLoggedIn ? <MyStack /> : <NavStack />}
+        {isLoggedIn ? <NavStack /> : <MyStack />}
       </NavigationContainer>
     </SafeAreaView>
   );
