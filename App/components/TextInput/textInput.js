@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, TextInput, useColorScheme} from 'react-native';
 import styles from './styles';
-import {colors} from '../../theme';
+import {colors} from '../../themes';
 
 const InputText = ({style, value, containerStyle, onChange, ...props}) => {
   const isDark = useColorScheme() === 'dark';
