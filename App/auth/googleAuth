@@ -1,0 +1,31 @@
+// import { useDispatch } from 'react-redux'
+// import { GoogleSignin } from '@react-native-google-signin/google-signin'
+
+// import {
+//   updateGoogleProfile,
+//   updateGoogleToken,
+// } from '../Redux/slice/loginSlice'
+
+// const OnGoogleButtonPress = loginType => async (dispatch, getState) => {
+//   GoogleSignin.configure({
+
+//     webClientId: "" }) // Get the users ID token
+//   const { idToken, user } = await GoogleSignin.signIn()
+//   // Create a Google credential with the token
+//   if (!idToken) {
+//     throw 'something went wrong'
+//   } else {
+//     dispatch(updateGoogleToken(idToken))
+//     dispatch(
+//       updateGoogleProfile({
+//         email: user.email,
+//         name: user.name,
+//         social_login_type: loginType,
+//         social_login_token: idToken,
+//         device_token: getState().loginSlice.deviceToken,
+//       }),
+//     )
+//   }
+// }
+
+// export default OnGoogleButtonPress
