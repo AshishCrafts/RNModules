@@ -1,7 +1,9 @@
 import {StyleSheet, Text, View} from 'react-native';
+import {colors} from '../../themes';
+import {hp, wp} from '../../services/diamension';
 import React from 'react';
 
-const login = () => {
+const Login = () => {
   return (
     <View style={styles.main}>
       <Text style={styles.text}>login</Text>
@@ -9,17 +11,17 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
 
 const styles = StyleSheet.create({
   main: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'crimson',
+    backgroundColor: colors.begini,
   },
   text: {
     fontSize: 30,
-    color: 'white',
+    color: colors.WHITE,
   },
 });
