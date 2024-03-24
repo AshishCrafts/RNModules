@@ -4,9 +4,9 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {colors} from '../../themes';
 
-const Login = () => {
+const Login = ({navigation}) => {
   const handleSubmit = async () => {
-    console.log('hi');
+    navigation.navigate('HomeScreen');
   };
 
   return (
@@ -31,7 +31,6 @@ const Login = () => {
           borderRadius: 9,
         }}
         onPress={handleSubmit}
-        isLoading={''}
       />
       <Text style={styles.bottomText}>You want to create your account?</Text>
       <View style={styles.bottomText}>

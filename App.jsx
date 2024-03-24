@@ -5,12 +5,9 @@ import RootNavigation from './App/routes/RootNavigation';
 
 function App() {
   return (
-    // <Provider store={store}>
     <>
       <RootNavigation />
     </>
-
-    // </Provider>
   );
 }
 export default App;

@@ -4,9 +4,9 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {colors} from '../../themes';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   const handleSubmit = async () => {
-    console.log('hi');
+    navigation.navigate('loginScreen');
   };
 
   return (

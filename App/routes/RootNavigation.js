@@ -3,12 +3,9 @@ import NavStack from './NavStack';
 import MyStack from './StarterStack';
 import {SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-
-const Stack = createNativeStackNavigator();
 
 const RootNavigation = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <SafeAreaView style={{flex: 1}}>
